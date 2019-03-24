@@ -4,16 +4,16 @@ const getLoveTrianglesCount = require('./src/index');
 
 describe('Love triangles', () => {
   it('1', () => {
-    const count = getLoveTrianglesCount([2, 3, 1]);
-    assert.equal(count, 1);
+   const count = getLoveTrianglesCount([2, 3, 1]);
+   assert.equal(count, 1);   
   });
 
-  it('2', () => {
+    it('2', () => {
     const count = getLoveTrianglesCount([2, 3, 1, 5, 6, 4]);
     assert.equal(count, 2);
   });
 
-  it('3', () => {
+ it('3', () => {
     const count = getLoveTrianglesCount([2, 3, 1, 5, 6, 4, 2, 3, 1, 5, 6, 4, 2, 3, 1, 5, 6, 4]);
     assert.equal(count, 2);
   });
@@ -23,7 +23,7 @@ describe('Love triangles', () => {
     assert.equal(count, 0);
   });
 
-  it('5', () => {
+ it('5', () => {
     const count = getLoveTrianglesCount([4, 5, 6, 5, 5, 6]);
     assert.equal(count, 0);
   });
@@ -33,7 +33,7 @@ describe('Love triangles', () => {
     assert.equal(count, 1);
   });
 
-  it('7', () => {
+it('7', () => {
     const count = getLoveTrianglesCount([2, 3, 1, 5, 6, 4, 8, 9, 7, 0, 10, 18, 20, 14, 7, 17, 8, 14, 10, 1]);
     assert.equal(count, 3);
   });
@@ -53,7 +53,7 @@ describe('Love triangles', () => {
     assert.equal(count, 8);
   });
 
-  it('11', () => {
+ it('11', () => {
     const count = getLoveTrianglesCount([3, 9, 12, 6, 13, 16, 15, 3, 14, 5, 4, 1, 10, 2, 4, 4, 10, 14, 11]);
     assert.equal(count, 4);
   });
